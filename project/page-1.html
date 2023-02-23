@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/css_page-1.css">
+</head>
+<body>
+
+
+
+<div class="topnav">
+  <a href="index.html"><img src="img/img-1.png" height="27px" width="36px" title="茄子模仿~"></a>
+  <a href="#">首页</a>
+  <a href="#">沸点</a>
+  <a href="#">课程</a>
+  <a href="#">直播</a>
+  <a href="#">活动</a>
+  <a href="#">竞赛</a>
+  <a href="#">商城</a>
+  <a href="#">APP</a>
+  <a href="#">插件</a>
+  <a href="#" style="float:right">会员</a>
+  <a href="#" style="float:right">创作者中心</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1>BOM相关知识|青训营笔记</h1>
+      <h5>2023年02月09日 23:20 ·  阅读 6</h5>
+      <p>这是我参与「第五届青训营」伴学笔记创作活动的第 17 天。今天我们开始谈谈BOM相关知识，请大家多多指教！</p>
+      <h3>【BOM概要】</h3>
+      <p>· BOM提供独立于内容且可以与浏览器窗口进行交互的对象，其核心对象是Window<br/>
+		· Window下又提供了很多对象，这些对象用于访问浏览器，被称为浏览器对象<br/>
+		· Window各内置对象之间按照某种层次关系组织起来的模型统称为浏览器对象模型</p>
+      <hr/>
+      <h3>【两个常用事件】</h3>
+      <p>Windows提供了很多事件，下面介绍两个比较常用的事件</p>
+      <h4>window.onload加载事件</h4>
+      <p>- 在网页开发中可以通过Window对象调用onload实现窗口（页面）加载事件，当文档内容包括图像、脚本文件、CSS文件等）完全加载时会触发该事件，并调用该事件对应的事件处理函数<br/>
+
+		- JavaScript代码是从上到下依次执行的，如果在页面加载完成后执行某些代码，并把这些代码写到页面任意地方，可以把这部分代码写到window.onload事件处理函数中<br/>
+
+		- onload页面加载事件有两种处理方式：</p>
+      <p>//方式1<br/>
+		window.onload=function(){};<br/>
+		//方式2<br/>
+		window.addEventLintener('load',function(){});<br/></p>
+      <p>注意：<br/>
+		window.onload注册事件的方式只能写一次，如有多个则以最后一个为准<br/>window.addEventLintener注册事件不受注册次数限制</p>
+      <hr/>
+      <h4>document.DOMContentLoaded加载事件</h4>
+      <p>- document.DOMContentLoaded加载事件会在DOM加载完成时触发<br/><br/>
+		- 执行速度更快，适用于页面中图片很多的情况<br/><br/>
+		- document.DOMContentLoaded加载事件有兼容性问题，需要浏览器是IE9以上版本<br/></p>
+	  <h4>小结</h4>
+      <p>今天总结了BOM相关知识，了解了window.onload加载事件和document.DOMContentLoaded加载事件。</p>
+    </div>
+    <div class="card">
+      <h2>相关推荐</h2>
+      <hr/>
+      <div class="card">
+      <h3>DOM相关知识|青训营笔记</h3>
+      <p>这是我参与「第五届青训营」伴学笔记创作活动的第 16 天。今天我们开始谈谈DOM相关知识，请大家多多指教！</p>
+      </div>
+      <div class="card">
+      <h3>JavaScirpt基础|青训营笔记</h3>
+      <p>这是我参与「第五届青训营」伴学笔记创作活动的第 15 天。今天我们开始谈谈JavaScirpt基础的相关知识，请大家多多指教！</p>
+      </div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>阿巴拉</h2>
+      <p>文章被阅读数 145</p>
+    </div>
+    <div class="card">
+     <h3>相关文章</h3>
+     <p>DOM相关知识|青训营笔记</p>
+     <br/>
+     <p>JavaScirpt基础|青训营笔记</p>
+     <br/>
+     <p>初识JavaScirpt|青训营笔记</p>
+    </div>
+    <div class="card">
+      <h3>目录</h3>
+      <p>【BOM概要】</p>
+      <br/>
+      <p>【两个常用事件】</p>
+      <br/>
+      <p> window.onload加载事件</p>
+      <br/>
+      <p> document.DOMContentLoaded加载事件</p>
+      <br/>
+      <p>小结</p>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
